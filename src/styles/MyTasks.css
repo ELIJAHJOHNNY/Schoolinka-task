@@ -1,0 +1,135 @@
+@media only screen and (min-width: 768px) {
+  .pagenationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-family: work Sans;
+    font-size: 14px;
+  }
+
+  .pagenationPreviousList:hover,
+  .pagenationPageList:hover {
+    color: #ffffff;
+    border-radius: 100px;
+    background-color: #3f5bf6;
+  }
+
+  .pagenationActive {
+    background-color: #3f5bf6;
+    border-radius: 100px;
+    color: #ffffff;
+  }
+
+  .pagenationActive .pagenationPageLink {
+    color: white;
+  }
+
+  .pagenationDisabled {
+    opacity: 0.3;
+  }
+
+  .pagenationPageList:hover .pagenationPageLink {
+    color: white;
+  }
+
+  .pagenationPreviousList:hover .iconStyle {
+    color: white;
+  }
+
+  .pagenationPageLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #808080;
+  }
+  .pagenationPreviousList {
+    transition: 0.5s;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .pagenationPageList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pagenationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: work Sans;
+    font-size: 14px;
+  }
+
+  .pagenationPreviousList:hover,
+  .pagenationPageList:hover {
+    color: #ffffff;
+    border-radius: 100px;
+    background-color: #3f5bf6;
+  }
+
+  .pagenationActive {
+    background-color: #3f5bf6;
+    border-radius: 100px;
+    color: #ffffff;
+  }
+
+  .pagenationActive .pagenationPageLink {
+    color: white;
+  }
+
+  .pagenationDisabled {
+    opacity: 0.3;
+  }
+
+  .pagenationPageList:hover .pagenationPageLink {
+    color: white;
+  }
+
+  .pagenationPreviousList:hover .iconStyle {
+    color: white;
+  }
+
+  .pagenationPageLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #808080;
+  }
+  .pagenationPreviousList {
+    transition: 0.5s;
+    width: auto;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .pagenationPageList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
