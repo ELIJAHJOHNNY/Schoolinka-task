@@ -145,7 +145,7 @@ const GrandLayout: React.FC<Props> = ({ children }) => {
   return (
     <div>
       <Header />
-      <div className="mt-[100px] lg:px-[56px] xs:px-[24px] overflow-y-hidden relative ">
+      <div className="mt-[100px] lg:px-[56px] xs:px-[24px] overflow-y-hidden relative h-[100vh] ">
         <div className="w-full flex items-center justify-between">
           <div>
             <h1 className="font-workSans text-[24px] font-[700] ">
@@ -167,13 +167,13 @@ const GrandLayout: React.FC<Props> = ({ children }) => {
           </button>
         </div>
         {/* overflow-y-scroll */}
-        <div className="flex justify-between w-full xs:max-h-[550px] md:max-h-[700px] lg:max-h-[550px] mt-2 overflow-y-scroll scrollbar-hide ">
+        <div className="flex justify-between w-full xs:max-h-[550px] md:max-h-[700px] lg:max-h-[700px] mt-2 overflow-y-scroll scrollbar-hide ">
           <TodoContext.Provider value={contextValues}>
             <div className="lg:w-[60] xl:w-[71%] xs:w-full mt-4  lg:overflow-y-scroll">
               <MyTasks />
             </div>
             <hr className="bg-[#EAECF0] w-[1px] h-full mt-4 xs:hidden lg:block " />
-            <div className="lg:w-[37%] xl:w-[26%] ">{children}</div>
+            <div className="lg:w-[37%] xl:w-[26%] pb-[90px] ">{children}</div>
           </TodoContext.Provider>
         </div>
         <div className="fixed bottom-0 right-0 w-full mb-[24px] flex items-center justify-center  ">

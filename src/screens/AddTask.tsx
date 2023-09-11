@@ -42,7 +42,7 @@ const AddTask = () => {
 
   const MainLayout = () => {
     return (
-      <div>
+      <div className="">
         <section className="flex items-center justify-between w-full">
           <p className="font-[500] ">Add Task</p>
           <button onClick={() => navigate("/")}>

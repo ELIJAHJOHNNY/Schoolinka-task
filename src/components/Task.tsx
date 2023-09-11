@@ -48,13 +48,7 @@ const Task = ({ todo }: any) => {
           >
             {todo?.title}
           </p>
-          <p
-            className={
-              isChecked
-                ? " md:block xs:hidden line-through text-[#D0D5DD] "
-                : " md:block xs:hidden "
-            }
-          >
+          <p className={isChecked ? " line-through text-[#D0D5DD] " : " "}>
             10:30am - 11:30am
           </p>
         </div>
