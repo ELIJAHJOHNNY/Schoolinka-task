@@ -16,9 +16,6 @@ const Task = ({ todo }: any) => {
 
   return (
     <div
-      onClick={() =>
-        navigate("/view-task", { state: { id: todo?.id, todo: todo } })
-      }
       key={todo?.id}
       className="hover:bg-[#EAEDFE] bg-[#F9FAFB] mt-2 h-[72px] w-full flex items-center justify-between px-4 font-workSans text-[14px] cursor-pointer "
     >
@@ -29,15 +26,20 @@ const Task = ({ todo }: any) => {
           onChange={() => setIsChecked(!isChecked)}
           className="rounded-[6px] mr-4 accent-[#3F5BF6] cursor-pointer "
         />
-        <div className="">
+        <div
+          className=""
+          onClick={() =>
+            navigate("/view-task", { state: { id: todo?.id, todo: todo } })
+          }
+        >
           <p
             className={
               isChecked
-                ? "font-[500] xs:block md:hidden cancledText "
+                ? "font-[500] xs:block md:hidden cancledText text-[#D0D5DD]"
                 : "font-[500] xs:block md:hidden "
             }
           >
-            {trucateTodoTitle(todo?.title, 25)}
+            {trucateTodoTitle(todo?.title, 20)}
           </p>
           <p
             className={
@@ -54,17 +56,7 @@ const Task = ({ todo }: any) => {
         </div>
       </div>
       <div>
-        <p>
-          {
-            todo?.todoDate === undefined ? "Today" : todo?.todoDate
-            // : format(todo?.todoDate, "MMM dd, yyyy")}
-            //   todo?.todoDate.toLocaleDateString("en-US", {
-            //     year: "numeric",
-            //     month: "long",
-            //     day: "numeric",
-            //   })
-          }
-        </p>
+        <p>{todo?.todoDate === undefined ? "Today" : todo?.todoDate}</p>
       </div>
     </div>
   );

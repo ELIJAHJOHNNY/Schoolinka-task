@@ -7,7 +7,6 @@ import { useTodoContext } from "./GrandLayout";
 
 const CalendarComp = () => {
   const { selectedDate, handleMonthChange, handleDateClick } = useTodoContext();
-  // const targetDivRef = useRef<any>(null);
   console.log(
     "selected date is",
     selectedDate?.toLocaleDateString("en-US", {
@@ -16,22 +15,11 @@ const CalendarComp = () => {
       day: "numeric",
     })
   );
-  // useEffect(() => {
-  //   const inputElement = document.createElement("input");
-  //   inputElement.setAttribute("type", "text");
-  //   inputElement.setAttribute("placeholder", "Enter text here");
-
-  //   // Find the target div by its class name using the ref
-  //   const targetDiv = targetDivRef.current;
-
-  //   // Insert the input element above the target div
-  //   targetDiv?.parentNode.insertBefore(inputElement, targetDiv);
-  // }, []);
 
   return (
-    <div className="">
+    <div className="relative">
       <input
-        className="outline-none border-[1px] rounded-[8px] border-[#999999] p-2 h-[40px] w-[200px] font-workSans text-[14px] "
+        className="outline-none border-[1px] rounded-[8px] border-[#dad6d6] p-2 h-[40px] w-[200px] font-workSans text-[14px] absolute top-[80px] left-3 "
         readOnly
         value={
           selectedDate !== null

@@ -44,3 +44,6 @@ button.rdrDayHovered {
 .cancledText {
   text-decoration: line-through;
 }
+.rdrMonthAndYearWrapper {
+  margin-bottom: 50px;
+}
