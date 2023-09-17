@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was built by Kugbiyi Elijah using React and Typescript as assessment for a Frontend Engineer role with Schoolinka.
+This project was built by Kugbiyi Elijah using React and Typescript.
 
 To run the application, navigate to the project directory and run the following code:
 
